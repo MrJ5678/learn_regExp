@@ -1,0 +1,36 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-25 12:06:18
+ * @LastEditTime: 2020-03-25 17:23:56
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /正则表达式/字符串类元字符.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字符类元字符</title>
+</head>
+<body>
+  <script>
+    // 字符类元字符 []
+    // 表示一个字符的位置
+    // []可以写 -, 表示范围
+    // [a-z]  => 表示 a到z任意一个字符
+    // [0-9]
+    // [A-Z]
+    // [a-zA-Z0-9] 表示 a到z A到Z 0-9 任意一个字符
+    // [^abc] 表示非 abc中任意一个
+    // 匹配a-z任意一个字符
+    //   /[abc]/  => 匹配abc中一个
+
+    // console.log(/[abc]/.test('a123'))
+    // console.log(/[abc]/.test('123'))
+    // console.log(/[a-zA-Z0-9]/.test('0'))
+    console.log(/[^a-zA-Z0-9]/.test('_'))
+
+  </script>
+</body>
+</html>

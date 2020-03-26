@@ -1,0 +1,55 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-25 11:20:54
+ * @LastEditTime: 2020-03-25 11:46:51
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /正则表达式/正则表达式的组成.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正则表达式的组成</title>
+</head>
+<body>
+  <script>
+    // 正则表达式的组成
+    // 普通字符 + 元字符
+    // 普通字符: 字母/数字, 没有实际意义
+    // 元字符: 有含义
+    // 例如: 
+    //    1. \d: 匹配数字 0-9
+    // console.log(/\d/.test('abc3'))
+    // console.log(/\d/.test('abc'))
+    //    2. \D: 匹配非数字
+    // console.log(/\D/.test('3'))
+    // console.log(/\D/.test('abc'))
+    //    3. \w: 匹配 a-z A-Z 0-9 _
+    // console.log(/\w/.test('abc'))
+    //    4. \W: 匹配非 a-z A-Z 0-9 _
+    // console.log(/\W/.test('_abc_'))
+    // console.log(/\W/.test('_abc_$'))
+    // console.log(/\W/.test('_a c_'))
+    //    5. \s: 匹配不可见字符: 空格 换行 \n tab \t
+    // console.log('今天\n元宵节')
+    // console.log('今天\t元宵节')
+    // console.log('今天 元宵节')
+    // console.log(/\s/.test('  '))
+    // console.log(/\s/.test(' \n'))
+    // console.log(/\s/.test(' \t'))
+    //    6. \S: 匹配可见字符
+    // console.log(/\S/.test('abc '))
+    // console.log(/\S/.test('abc\nc'))
+    // console.log(/\S/.test('abc'))
+    // console.log(/\S/.test('   '))
+    //    7. .: 匹配除了换行和回车的任意字符
+    // console.log(/./.test('^&*('))
+    // console.log(/./.test('\n '))
+    //    8. \.: 只匹配 .
+    console.log(/\./.test('a.b')) 
+    console.log(/\./.test('ab ')) 
+  </script>
+</body>
+</html>

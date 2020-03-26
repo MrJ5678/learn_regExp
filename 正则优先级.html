@@ -1,0 +1,32 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-25 11:50:39
+ * @LastEditTime: 2020-03-25 12:06:05
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /正则表达式/正则优先级.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正则优先级</title>
+</head>
+<body>
+  <script>
+    // 正则优先级
+    // a或者b或者c
+    // console.log(/a|b|c/.test('cde'))
+    // console.log(/a|b|c/.test('de'))
+    // (): 分组 => 优先级最高
+    // console.log(/f|boot/.test('fboo'))
+    // console.log(/f|boot/.test('boot'))
+    // console.log(/f|boot/.test('f'))
+    // console.log(/(f|b)oot/.test('f'))
+    // console.log(/(f|b)oot/.test('foot'))
+    // console.log(/(f|b)oot/.test('fboot'))
+    // console.log(/(f|b)oot/.test('boot'))
+  </script>
+</body>
+</html>

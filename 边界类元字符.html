@@ -1,0 +1,29 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-25 17:26:59
+ * @LastEditTime: 2020-03-25 17:35:56
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /正则表达式/边界类元字符.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>边界类元字符</title>
+</head>
+<body>
+  <script>
+    // 边界类元字符   开始和结束
+    // 需求: 以a开头的字符
+    // ^ 在[]中代表'非', 不在[]中时代表'开始'的意思
+    // $ 结束
+    // console.log(/^a/.test('abc'))
+    // console.log(/^a/.test('bc'))
+    console.log(/a$/.test('cba'))
+    console.log(/a$/.test('abc'))
+    // ^ $ 一起使用作用为精确匹配之间内容
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-25 20:00:50
+ * @LastEditTime: 2020-03-25 20:21:25
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /正则表达式/量词类元字符.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>量词类元字符</title>
+</head>
+<body>
+  <script>
+    // 量词类元字符
+    // * 表示次数为0次或以上
+    // + 表示次数为1次或以上
+    // ？表示0或1次
+    // {m} 表示次数为m次
+    // {m,} 表示次数为m次以上
+    // {m, n} 表示m到n之间
+
+    // * 
+    // console.log(/^a*$/.test(''))
+    // console.log(/^a*$/.test('a'))
+    // console.log(/^a*$/.test('aa'))
+    // console.log(/^a*$/.test('aab'))
+
+    // + 
+    // console.log(/^a+$/.test(''))
+    // console.log(/^a+$/.test('a'))
+    // console.log(/^a+$/.test('aa'))
+    // console.log(/^a+$/.test('aab'))
+
+    // ?
+    // console.log(/^a?$/.test(''))
+    // console.log(/^a?$/.test('a'))
+    // console.log(/^a?$/.test('aa'))
+    // console.log(/^a?$/.test('aab'))
+
+    // {} 量词是就近修饰
+    console.log(/chuan{2}/.test('chuanchuan'))
+    console.log(/(chuan){2}/.test('chuanchuan'))
+    console.log(/chuan{2}/.test('chuannn'))
+  </script>
+</body>
+</html>

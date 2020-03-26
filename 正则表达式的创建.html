@@ -1,0 +1,29 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-25 11:11:54
+ * @LastEditTime: 2020-03-25 11:19:11
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /正则表达式/正则表达式的创建.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正则表达式创建</title>
+</head>
+<body>
+  <script>
+    // 正则表达式创建
+    //  1.构造函数创建  RegExp => regular expression
+    let reg = new RegExp(/a/)
+    // test(), 用来测试, 测试字符串是否满足正则表达式规则
+    console.log(reg.test('abc'))
+    console.log(reg.test('1bc'))
+    // 正则字面量
+    let reg1 = /abc/
+    console.log(reg1.test('def'))
+  </script>
+</body>
+</html>
